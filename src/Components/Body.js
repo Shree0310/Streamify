@@ -1,16 +1,20 @@
 import DataViz from "./DataViz";
 import Header from "./Header";
 import Metrics from "./Metrics";
+import RecentStreams from "./RecentStreams";
 
 const Body = () =>{
     return (
         <div>
             <Header/>
-            <div>
+            <div className="dark:bg-gray-900">
                 <Metrics/>
             </div>
             <div>
                 <DataViz/>
+            </div>
+            <div>
+                <RecentStreams/>
             </div>
         </div>
     )

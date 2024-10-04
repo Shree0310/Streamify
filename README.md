@@ -17,7 +17,13 @@
 - Top 5 Streamed Songs
 
 * - Data table (Section 3)
-- 
+- A table that lists detailed information about recent streams with the following columns:
+- Song Name
+- Artist
+- Date Streamed
+- Stream Count
+- User ID
+
 
 # Components structure
 - Created a Body component that has all the other section
