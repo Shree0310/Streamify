@@ -4,7 +4,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        caskadia : ['Caskasia Cove', 'monospace'],
+        satoshi: ['Satoshi', 'monospace'],
+        agentOrange: ['AgentOrange', 'monospace']
+      }
+    },
   },
   plugins: [],
 }
