@@ -64,8 +64,8 @@ const RecentStreams = () =>{
       
     return (
         <div className="overflow-x-auto">
-        <div className="bg-gray-800 rounded-lg py-4 sm:py-5 px-2 sm:px-4 mx-2 sm:mx-4">
-            <h2 className="font-agentOrange text-center dark:text-white font-semibold text-lg sm:text-xl lg:text-2xl pt-4 sm:pt-6 lg:pt-7">Recent Streams</h2>
+        <div className="dark:bg-gray-800 bg-gray-300 rounded-lg py-4 sm:py-5 px-2 sm:px-4 mx-2 sm:mx-4">
+            <h2 className="font-agentOrange text-center dark:text-white text-gray-700 font-semibold text-lg sm:text-xl lg:text-2xl pt-4 sm:pt-6 lg:pt-7">Recent Streams</h2>
             <div className="p-2 sm:p-4">
                 <input
                  type="text"
@@ -75,9 +75,9 @@ const RecentStreams = () =>{
                  onChange={(e)=> setFilter(e.target.value)}/>
 
             </div>
-                <table className="bg-gray-800 w-full lg:min-w-full table-auto shadow-lg rounded-lg overflow-x-auto">
+                <table className="dark:bg-gray-800 bg-gray-300 w-full lg:min-w-full table-auto shadow-lg rounded-lg overflow-x-auto">
                     <thead>
-                        <tr className=" text-gray-200 uppercase ">
+                        <tr className=" dark:text-gray-200 text-gray-500 uppercase ">
                             <th 
                             className="py-3 px-6 text-left cursor-pointer"
                             onClick={() => sortData('songName')}>
@@ -102,7 +102,7 @@ const RecentStreams = () =>{
                     </thead>
                     <tbody>
                         {sortedAndFilteredData.map((stream,index)=>(
-                            <tr key={index} className="dark:bg-gray-700 text-gray-300 font-light hover:bg-gray-100 hover:text-gray-800">
+                            <tr key={index} className="dark:bg-gray-700 text-gray-300 font-light hover:bg-gray-500 hover:text-gray-500 dark:hover:bg-gray-100 dark:hover:text-gray-800">
                             <td className="py-3 px-6 text-left">{stream.songName}</td>
                             <td className="py-3 px-6 text-left">{stream.artist}</td>
                             <td className="py-3 px-6 text-left">{stream.dateStreamed}</td>

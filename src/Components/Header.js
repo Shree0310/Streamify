@@ -11,14 +11,14 @@ const Header = () =>{
         <div>
             <header className="dark:bg-gray-900 bg-white h-20 shadow-md">
                 <nav className="mx-auto flex items-center justify-between">
-                    <div className="sm:text-sm lg:text-lg md:text-lg font-misterGrape flex font-bold items-center ml-10 text-blue-600">
+                    <div className="sm:text-sm lg:text-lg md:text-lg font-misterGrape flex font-bold items-center ml-10 text-blue-600 pt-6 lg:pt-0">
                        Streamify 
                     </div>
                     {/* Hamburger Button (for small screens) */}
                 <div className="lg:hidden">
                 <button
                     onClick={toggleMenu}
-                    className="text-white focus:outline-none"
+                    className="text-white focus:outline-none pt-6 mr-4"
                 >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>

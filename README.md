@@ -3,7 +3,7 @@
 - nav items
 - logo
 
-- Key Metrics (Section 1)
+# Key Metrics (Section 1)
 - Building the cards using the bento grids in tailwind
 - Total Users card
 - Active Users card
