@@ -61,43 +61,23 @@ const RecentStreams = () =>{
     };
 
     const sortedAndFilteredData = getSortedAndFilteredData();
-
-
-
-
-     // Sorting logic based on key and direction
-    // const sortedData = [...streamData].sort((a, b) => {
-    //     if (a[sortConfig.key] < b[sortConfig.key]) {
-    //     return sortConfig.direction === 'asc' ? -1 : 1;
-    //     }
-    //     if (a[sortConfig.key] > b[sortConfig.key]) {
-    //     return sortConfig.direction === 'asc' ? 1 : -1;
-    //     }
-    //     return 0;
-    // });
-
-    //  // Function to filter the data
-    // const filteredData = sortedData.filter((stream) =>
-    // stream.songName.toLowerCase().includes(filter.toLowerCase())
-    // );
       
     return (
         <div className="overflow-x-auto">
-            <div className="p-4">
+        <div className="bg-gray-800 rounded-lg py-4 sm:py-5 px-2 sm:px-4 mx-2 sm:mx-4">
+            <h2 className="font-agentOrange text-center dark:text-white font-semibold text-lg sm:text-xl lg:text-2xl pt-4 sm:pt-6 lg:pt-7">Recent Streams</h2>
+            <div className="p-2 sm:p-4">
                 <input
                  type="text"
                  placeholder="Filter by song name"
-                 className="border border-gray-200 p-2 rounded-md"
+                 className="border border-gray-300 dark:border-gray-600 p-2 rounded-md w-full sm:w-auto"
                  value={filter}
                  onChange={(e)=> setFilter(e.target.value)}/>
 
             </div>
-
-        <div>
-            <h2 className="text-center font-semibold pt-7">Recent Streams</h2>
-                <table className="min-w-full table-auto bg-white shadow-lg rounded-lg">
+                <table className="bg-gray-800 w-full lg:min-w-full table-auto shadow-lg rounded-lg overflow-x-auto">
                     <thead>
-                        <tr className="bg-gray-200 text-gray-600 uppercase ">
+                        <tr className=" text-gray-200 uppercase ">
                             <th 
                             className="py-3 px-6 text-left cursor-pointer"
                             onClick={() => sortData('songName')}>
@@ -122,7 +102,7 @@ const RecentStreams = () =>{
                     </thead>
                     <tbody>
                         {sortedAndFilteredData.map((stream,index)=>(
-                            <tr key={index} className="bg-white text-gray-500 font-light hover:bg-gray-100">
+                            <tr key={index} className="dark:bg-gray-700 text-gray-300 font-light hover:bg-gray-100 hover:text-gray-800">
                             <td className="py-3 px-6 text-left">{stream.songName}</td>
                             <td className="py-3 px-6 text-left">{stream.artist}</td>
                             <td className="py-3 px-6 text-left">{stream.dateStreamed}</td>

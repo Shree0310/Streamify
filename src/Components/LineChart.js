@@ -34,7 +34,14 @@ const LineChart = () =>{
         }
       };
 
-    return <Line data= {userGrowthData} options={options} />
+    return (
+      <div className="w-full h-auto p-4">
+        <div className="h-[200px]  md:h-[500px] lg:h-[404px] lg:w-[800px] overflow-hidden">
+          <Line data= {userGrowthData} options={options} />
+          </div>
+      </div>
+    )
+    
 } 
 
 export default LineChart;

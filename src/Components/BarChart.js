@@ -8,37 +8,62 @@ const BarChart = () =>{
         label: 'Streams (in thousands)',
         data: [85, 78, 67, 50, 45],
         backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
+            "#f87171", // Red
+            "#60a5fa", // Blue
+            "#fbbf24", // Yellow
+            "#34d399", // Green
+            "#a78bfa"  // Purple
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
+            "#b91c1c", // Dark Red
+            "#2563eb", // Dark Blue
+            "#d97706", // Dark Yellow
+            "#059669", // Dark Green
+            "#7c3aed"  // Dark Purple
         ],
-        borderWidth: 1,
+        borderWidth: 2,
       }
     ]
     };
 
-    const options = {
-        responsive: true,
+    const barOptions = {
+            responsive: true,
+            plugins: {
+            legend: {
+                display: true,
+                labels: {
+                color: "#4b5563", // Tailwind gray-600
+                },
+            },
+        },   
+
         scales: {
           x: {
-            grid: { display: false },
+            ticks: {
+              color: "#1f2937", // Tailwind gray-800
+            },
+            grid: {
+              display: false,
+            },
           },
           y: {
-            beginAtZero: true,
-          }
-        }
+            ticks: {
+              color: "#1f2937", // Tailwind gray-800
+            },
+            grid: {
+              color: "#e5e7eb", // Tailwind gray-200
+            },
+          },
+        },
       };
 
-    return <Bar data={topFiveData} options={options} />
+    return (
+        <div className="w-full h-auto p-4">
+            <div className="h-[200px]  md:h-[500px] lg:h-[404px] lg:w-[800px] overflow-hidden">
+                <Bar data={topFiveData} options={barOptions} />
+            </div>
+        </div>
+    ) 
 }
 
 export default BarChart;

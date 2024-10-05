@@ -10,10 +10,10 @@ const Body = () =>{
             <div>
                 <Metrics/>
             </div>
-            <div>
+            <div className="pt-4">
                 <DataViz/>
             </div>
-            <div>
+            <div className="overflow-x-auto">
                 <RecentStreams/>
             </div>
         </div>

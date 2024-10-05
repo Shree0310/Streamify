@@ -21,7 +21,13 @@ const PieChart = () =>{
           }
         }
       };
-    return <Pie data={revenueDistributionData} options={options}/>
+    return (
+      <div className="w-full h-auto p-4">
+        <div className="flex justify-center h-[200px]  md:h-[500px] lg:h-[804px] lg:w-[800px] w-[300px] overflow-hidden">
+          <Pie data={revenueDistributionData} options={options}/>
+          </div>
+      </div>
+    )
 }
 
 export default PieChart;
