@@ -76,7 +76,7 @@ const RecentStreams = () =>{
 
             </div>
                 <table className=" w-full lg:min-w-full table-auto shadow-lg rounded-lg overflow-x-auto">
-                    <thead className="dark:bg-gray-800 bg-gray-500 dark:text-gray-300 text-gray-800">
+                    <thead className="dark:bg-gray-800 bg-gray-500 dark:text-gray-300 text-gray-100">
                         <tr className=" dark:text-gray-200 text-gray-500 uppercase ">
                             <th 
                             className="py-3 px-6 text-left cursor-pointer"
@@ -102,7 +102,7 @@ const RecentStreams = () =>{
                     </thead>
                     <tbody>
                         {sortedAndFilteredData.map((stream,index)=>(
-                            <tr key={index} className="dark:bg-gray-600 dark:text-gray-400 text-gray-500 font-light hover:bg-gray-500 hover:text-gray-500 dark:hover:bg-gray-100 dark:hover:text-gray-800">
+                            <tr key={index} className="dark:bg-gray-600 dark:text-gray-400 text-gray-500 font-light hover:bg-gray-500 hover:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-800">
                             <td className="py-3 px-6 text-left">{stream.songName}</td>
                             <td className="py-3 px-6 text-left">{stream.artist}</td>
                             <td className="py-3 px-6 text-left">{stream.dateStreamed}</td>
