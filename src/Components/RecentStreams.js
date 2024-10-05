@@ -75,21 +75,22 @@ const RecentStreams = () =>{
                  onChange={(e)=> setFilter(e.target.value)}/>
 
             </div>
-                <table className=" w-full lg:min-w-full table-auto shadow-lg rounded-lg overflow-x-auto">
+            <div className="overflow-x-auto">
+                <table className=" w-full min-w-full table-fixed shadow-lg rounded-lg">
                     <thead className="dark:bg-gray-800 bg-gray-700 dark:text-gray-300 text-gray-100">
                         <tr className=" dark:text-gray-200 text-gray-500 uppercase ">
                             <th 
-                            className="py-3 px-6 text-left cursor-pointer"
+                            className="py-3 px-6 text-left w-1/4 cursor-pointer"
                             onClick={() => sortData('songName')}>
                                 Song Name {sortConfig.key === 'songName' ? (sortConfig.direction === 'asc' ? '▲' : '▼') : ''}
                             </th>
                             <th 
-                            className="py-3 px-6 text-left cursor-pointer"
+                            className="py-3 px-6 text-left w-1/4 cursor-pointer"
                             onClick={() => sortData('artist')}>
                               Artist {sortConfig.key === 'artist' ? (sortConfig.direction === 'asc' ? '▲' : '▼') : ''}
                             </th>
                             <th 
-                            className="py-3 px-6 text-left cursor-pointer"
+                            className="py-3 px-6 text-left w-1/4 cursor-pointer"
                             onClick={() => sortData('dateStreamed')}>
                                 Date Streamed {sortConfig.key === 'dateStreamed' ? (sortConfig.direction === 'asc' ? '▲' : '▼') : ''}
                             </th>
@@ -103,16 +104,17 @@ const RecentStreams = () =>{
                     <tbody>
                         {sortedAndFilteredData.map((stream,index)=>(
                             <tr key={index} className="dark:bg-gray-600 dark:text-gray-400 text-gray-500 font-light hover:bg-gray-500 hover:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-800">
-                            <td className="py-3 px-6 text-left">{stream.songName}</td>
-                            <td className="py-3 px-6 text-left">{stream.artist}</td>
-                            <td className="py-3 px-6 text-left">{stream.dateStreamed}</td>
-                            <td className="py-3 px-6 text-left">{stream.streamCount}</td>
+                            <td className="py-3 px-6 text-left truncate">{stream.songName}</td>
+                            <td className="py-3 px-6 text-left truncate">{stream.artist}</td>
+                            <td className="py-3 px-6 text-left truncate">{stream.dateStreamed}</td>
+                            <td className="py-3 px-6 text-left truncate">{stream.streamCount}</td>
                             </tr>
                         ))}                       
                     </tbody>
                 </table>
         </div>
         </div>
+    </div>
         
     )  
     
