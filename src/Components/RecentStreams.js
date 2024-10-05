@@ -76,7 +76,7 @@ const RecentStreams = () =>{
 
             </div>
                 <table className=" w-full lg:min-w-full table-auto shadow-lg rounded-lg overflow-x-auto">
-                    <thead className="dark:bg-gray-800 bg-gray-500 dark:text-gray-300 text-gray-100">
+                    <thead className="dark:bg-gray-800 bg-gray-700 dark:text-gray-300 text-gray-100">
                         <tr className=" dark:text-gray-200 text-gray-500 uppercase ">
                             <th 
                             className="py-3 px-6 text-left cursor-pointer"
