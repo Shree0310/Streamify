@@ -5,7 +5,7 @@ import RecentStreams from "./RecentStreams";
 
 const Body = () =>{
     return (
-        <div className="bg-gray-300 dark:bg-gray-900">
+        <div>
             <Header/>
             <div>
                 <Metrics/>

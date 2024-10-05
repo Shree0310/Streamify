@@ -9,7 +9,7 @@ const Header = () =>{
 
     return (
         <div>
-            <header className="dark:bg-gray-900 bg-white h-20 shadow-md">
+            <header className="dark:bg-gray-900 bg-gray-300 h-20 shadow-md">
                 <nav className="mx-auto flex items-center justify-between">
                     <div className="sm:text-sm lg:text-lg md:text-lg font-misterGrape flex font-bold items-center ml-10 text-blue-600 pt-6 lg:pt-0">
                        Streamify 
