@@ -6,7 +6,7 @@ const SideBar = ({isOpen})=>{
         <div>
             {/*Desktop Side Bar*/}
         <div className="hidden lg:flex">
-            <div className="dark:bg-gray-800 bg-gray-300 h-[808px] w-80 z-1 pt-[60px] pl-0 rounded-lg">
+            <div className="dark:bg-gray-800 bg-gray-300 h-[832px] w-80 z-1 pt-[60px] pl-0 rounded-lg">
                 <ul>
                     
                     <li className="text-lg font-bold text-left dark:text-gray-400 text-gray-900 pl-4 pb-10">
