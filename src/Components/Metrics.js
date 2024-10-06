@@ -5,7 +5,7 @@ import Tape1 from "./../Assets/Images/Tape1.png"
 
 const Metrics = ()=>{
     return (
-        <div className="dark:bg-gray-800 rounded-lg bg-gray-200 py-5 mx-4">
+        <div className="dark:bg-gray-800 rounded-lg bg-gray-200 py-8 ml-4 mr-4">
             <h2 className="font-agentOrange text-center dark:text-white font-semibold text-2xl">Metrics</h2>
             <p className="dark:text-blue-400 text-md">The metrics of the Streamify app</p>
             <div className="mt-10 grid gap-2 grid-rows-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
@@ -24,7 +24,7 @@ const Metrics = ()=>{
                         </div>
                     </div>
                     <div className="relative cursor-pointer pt-2 pl-2 shadow-md ">
-                        <div className="relative flex lg:object-cover sm:object-cover lg:h-80 h-40 flex-col transition hover:translate-y-1 overflow-hidden rounded-lg">
+                        <div className="relative flex lg:object-cover sm:object-cover lg:h-[234px] h-40 flex-col transition hover:translate-y-1 overflow-hidden rounded-lg">
                             <img
                             src={musicImage1}
                             className=""/>
@@ -51,7 +51,7 @@ const Metrics = ()=>{
                     
                     <div className="relative cursor-pointer py-2 hover:scale-100 delay-150 hover:translate-x-2 ease-in-out shadow-md ">
                         <div className="absolute inset-px rounded-lg bg-indigo-500"></div>
-                        <div className="relative flex h-52 flex-col overflow-hidden rounded-lg">
+                        <div className="relative flex h-[240px] flex-col overflow-hidden rounded-lg">
                             <div className="p-1">
                                 <p className= "mt-2 mb-2 font-bold tracking-tight text-gray-800 dark:text-white text-xl">
                                     Top Artist
@@ -95,7 +95,7 @@ const Metrics = ()=>{
                         </div>
                     </div>
                     <div className="relative cursor-pointer pt-2">
-                        <div className="relative flex h-80 flex-col overflow-hidden rounded-lg transition hover:translate-y-1">
+                        <div className="relative flex h-[240]px flex-col overflow-hidden rounded-lg transition hover:translate-y-1">
                             <img
                             src={musicImage2}
                             className=""/>
